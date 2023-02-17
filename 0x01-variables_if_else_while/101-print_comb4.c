@@ -45,7 +45,6 @@ int main(void)
 				num1++;
 			}
 			num2 = '0';
-			num1++;
 		}
 		num1 = '0';
 		num0++;
