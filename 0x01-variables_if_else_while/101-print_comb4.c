@@ -12,7 +12,9 @@ int main(void)
 	int num1;
 	int num2;
 
+	num0 = '0';
 	num1 = '0';
+	num2 = '0';
 	while (num0 != '9' + 1)
 	{
 		while (num1 != '9' + 1)
