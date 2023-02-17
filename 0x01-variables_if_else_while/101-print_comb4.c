@@ -48,7 +48,7 @@ int main(void)
 			num1++;
 		}
 		num1 = '0';
-		num2++;
+		num0++;
 	}
 	putchar('\n');
 	return (0);
