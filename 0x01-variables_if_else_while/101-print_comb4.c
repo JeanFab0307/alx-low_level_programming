@@ -39,6 +39,7 @@ int main(void)
 						num2++;
 					}
 				}
+				num1++;
 			}
 			else
 			{
