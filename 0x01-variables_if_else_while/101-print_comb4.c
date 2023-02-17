@@ -28,7 +28,7 @@ int main(void)
 						putchar(num0);
 						putchar(num1);
 						putchar(num2);
-						if (num1 == '7')
+						if (num0 == '7')
 							break;
 						putchar(',');
 						putchar(' ');
