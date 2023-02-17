@@ -14,7 +14,7 @@ int main(void)
 	num1 = '0';
 	while (num1 != '9' + 1)
 	{
-		putchar(num);
+		putchar(num1);
 		while (num2 != '9' + 1)
 		{
 			if (num2 > num1)
