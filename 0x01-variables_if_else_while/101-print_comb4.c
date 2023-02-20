@@ -23,21 +23,21 @@ int main(void)
 		{
 			while (num2 != '9' + 1)
 			{
-				if (num2 > num1)
-				{
-					putchar(num0);
-					putchar(num1);
-					putchar(num2);
-					if (num0 == '7')
-						break;
-					putchar(',');
-					putchar(' ');
-					num2++;
-				}
-				else
-				{
-					num2++;
-				}
+			if (num2 > num1)
+			{
+				putchar(num0);
+				putchar(num1);
+				putchar(num2);
+				if (num0 == '7')
+					break;
+				putchar(',');
+				putchar(' ');
+				num2++;
+			}
+			else
+			{
+				num2++;
+			}
 			}
 			num1++;
 		}
