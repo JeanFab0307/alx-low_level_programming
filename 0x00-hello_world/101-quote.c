@@ -9,9 +9,9 @@
 
 int main (void)
 {
-	char mess[];
+	char *mess[];
 
 	mess = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
-	write(2,*mess,strlen(mess));
-	return (0);
+	write(2,*mess,8);
+	return (1);
 }
