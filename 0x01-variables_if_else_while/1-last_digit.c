@@ -20,7 +20,7 @@ int main(void)
 	if (last_num < 6 && last_num != 0)
 		printf(" is %d and is less than 6 and not 0\n", last_num);
 	else if (last_num > 5)
-		printf(" is %dand is greater than 5\n", last_num);
+		printf(" is %d and is greater than 5\n", last_num);
 	else
 		printf(" is %d and is 0\n", last_num);
 	return (0);
