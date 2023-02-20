@@ -32,12 +32,8 @@ int main(void)
 				break;
 			putchar(',');
 			putchar(' ');
-			num2++;
 		}
-		else
-		{
 			num2++;
-		}
 		}
 		num1++;
 	}
