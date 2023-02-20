@@ -35,16 +35,12 @@ int main(void)
 			num2++;
 		}
 		else
-		{
 			num2++;
-		}
 		}
 		num1++;
 	}
 	else
-	{
 		num1++;
-	}
 		num2 = '0';
 	}
 	num1 = '0';
