@@ -17,34 +17,37 @@ int main(void)
 	num2 = '0';
 	while (num0 != '9' + 1)
 	{
+
 	while (num1 != '9' + 1)
 	{
-		if (num1 > num0)
+
+	if (num1 > num0)
+	{
+		while (num2 != '9' + 1)
 		{
-			while (num2 != '9' + 1)
-			{
-			if (num2 > num1)
-			{
-				putchar(num0);
-				putchar(num1);
-				putchar(num2);
-				if (num0 == '7')
-					break;
-				putchar(',');
-				putchar(' ');
-				num2++;
-			}
-			else
-			{
-				num2++;
-			}
-			}
-			num1++;
+
+		if (num2 > num1)
+		{
+			putchar(num0);
+			putchar(num1);
+			putchar(num2);
+			if (num0 == '7')
+				break;
+			putchar(',');
+			putchar(' ');
+			num2++;
 		}
 		else
 		{
-			num1++;
+			num2++;
 		}
+		}
+		num1++;
+	}
+	else
+	{
+		num1++;
+	}
 		num2 = '0';
 	}
 	num1 = '0';
