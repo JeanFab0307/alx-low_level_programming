@@ -1,9 +1,9 @@
 #include "main.h"
 int _putchar(char c);
+
 /**
  *print_alpahbet - print the letters a to z
- *
- *Return: nothing
+ *Return: void
  */
 
 void print_alphabet(void)
@@ -16,4 +16,5 @@ void print_alphabet(void)
 		_putchar(l);
 		l++;
 	}
+	_putchar('\n');
 }
