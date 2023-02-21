@@ -1,8 +1,9 @@
 #include "main.h"
 
 /**
- *print_alpahbet - print the letters a to z
- *Return: void
+ *print_alpahbet - Print the letters a to z
+ *
+ *Return: Void
  */
 
 void print_alphabet(void)
