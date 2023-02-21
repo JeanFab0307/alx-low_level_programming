@@ -16,5 +16,6 @@ void print_alphabet_x10(void)
 	{
 		while (l != 'z' + 1)
 			_putchar(l);
-		_putchar('n');
+		_putchar('\n');
+	}
 }
