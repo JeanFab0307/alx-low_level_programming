@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- *print_alpahbet - Print the letters a to z
+ *print_alphabet - Print the letters a to z
  *
  *Description: Print all letter from a to z with _putchar
  *Return: Void
