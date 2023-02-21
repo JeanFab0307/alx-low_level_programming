@@ -6,3 +6,6 @@ void print_alphabet(void);
 
 /*print_alphabet_x10 - print 10 times the alphabet */
 void print_alphabet_x10(void);
+
+/*_islower - return 1 if caracter is lowercase*/
+int _islower(int c);
