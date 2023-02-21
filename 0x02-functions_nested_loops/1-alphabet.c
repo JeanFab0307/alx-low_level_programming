@@ -1,5 +1,4 @@
 #include "main.h"
-int _putchar(char c);
 
 /**
  *print_alpahbet - print the letters a to z
