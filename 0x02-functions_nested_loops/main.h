@@ -12,3 +12,6 @@ int _islower(int c);
 
 /*_isalpha _ return 1 if char is uppercase*/
 int _isalpha(int c);
+
+/*print_sign - give num sign */
+int print_sign(int n);
