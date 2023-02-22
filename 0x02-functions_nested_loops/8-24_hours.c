@@ -15,7 +15,7 @@ void jack_bauer(void)
 	b = '0';
 	c = '0';
 	d = '0';
-	while (a != '2' && b != '3' && c != '5' && d != '9')
+	while (a != '2' && b != '3' && c != '5' && d != '9' + 1)
 	{
 		if (b != '9' + 1)
 		{
@@ -32,6 +32,7 @@ void jack_bauer(void)
 				}
 				else
 				{
+					_putchar(d);
 					d = '0';
 					c++;
 				}
