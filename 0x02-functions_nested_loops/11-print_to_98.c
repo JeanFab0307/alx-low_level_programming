@@ -6,7 +6,6 @@
  */
 void print_t_98(int n)
 {
-	int n;
 	int interval;
 
 	if (n < 0)
