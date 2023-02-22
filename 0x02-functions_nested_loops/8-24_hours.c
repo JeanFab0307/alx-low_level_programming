@@ -5,7 +5,7 @@
  *Return: void
  */
 
-void print_h(int h1, int h2, int m1, int m2);
+void print_h(int, int, int, int);
 
 void jack_bauer(void)
 {
