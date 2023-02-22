@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 #include "main.h"
 /**
  *print_to_98 - print numbers from a given number to 98
@@ -11,7 +12,7 @@ void print_t_98(int n)
 	if (n < 0)
 		interval = 98 + (-n) + 1;
 	else
-		interval =_abs( 98 - n) + 1;
+		interval =abs( 98 - n) + 1;
 	while (interval > 0)
 	{
 		printf("%d", 98 - interval--);
