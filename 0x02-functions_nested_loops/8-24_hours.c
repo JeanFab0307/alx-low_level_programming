@@ -4,7 +4,13 @@
  *
  *Return: void
  */
-/* print_hour - print the hour format */
+/**
+ *print_hour - print the hour format
+ *@int: a
+ *@int: b
+ *@int: c
+ *@int: d
+ */
 void print_hour(int, int, int, int);
 
 void jack_bauer(void)
@@ -27,6 +33,7 @@ void jack_bauer(void)
 				if (d != '9' + 1)
 				{
 					print_hour(a, b, c, d);
+					d++;
 				}
 				else
 				{
