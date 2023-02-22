@@ -4,10 +4,10 @@
  *@n: The limit of hte times table
  *@r: result
  */
-void one_digit(void);
+
 void two_digit(int r);
 void three_digit(int r);
-
+void one_digit(void);
 void print_times_table(int n)
 {
 	int i;
