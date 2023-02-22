@@ -6,12 +6,12 @@ void times_table(void)
 {
 	int i;
 	int j;
-	int res
+	int res;
 
 	i = '0';
-	j = '0';
 	while (i < '9')
 	{
+		j = '0';
 		while (j < '9')
 		{
 			res = (i - '0') * (j - '0');
