@@ -4,7 +4,7 @@
  *@n: The limit of hte times table
  *@r: result
  */
-void one_digit(int r);
+void one_digit(void);
 void two_digit(int r);
 void three_digit(int r);
 
@@ -54,9 +54,8 @@ void print_times_table(int n)
 }
 /**
  *one_digit - print number of 1 char
- *@r: the number with one or multiple digit
  */
-void one_digit(int r)
+void one_digit(void)
 {
 	_putchar(' ');
 	_putchar(' ');
