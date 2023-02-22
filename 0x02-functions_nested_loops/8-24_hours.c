@@ -1,15 +1,16 @@
 #include "main.h"
 /**
  *jack_bauer - Print hours from 00:00 to 24:00
- *
- *Return: void
- */
-/**
- * print_h - Print the hour format
  * @h1: First num of an hour
  * @h2: Second hour
  * @m1: First num of min
  * @m2: Second min
+ *
+ *Return: void
+ */
+
+/**
+ * print_h - Print the hour format
  *
  *Return: void
  */
