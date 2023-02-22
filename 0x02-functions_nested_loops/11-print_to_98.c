@@ -16,7 +16,7 @@ void print_to_98(int n)
 	while (interval > 0)
 	{
 		printf("%d", 98 - --interval);
-		if (interval > -1)
+		if (interval > 0)
 			printf(", ");
 		else
 			printf("\n");
