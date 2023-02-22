@@ -50,10 +50,10 @@ void jack_bauer(void)
 }
 /**
  *print_h - Print the hour format
- *@a: a
- *@b: b
- *@c: c
- *@d: d
+ *@a: first num of an hour
+ *@b: second
+ *@c: first num of min
+ *@d: second
  *
  *Return: void
  */
