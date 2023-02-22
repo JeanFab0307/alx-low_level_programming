@@ -1,13 +1,13 @@
 #include "main.h"
-/**
- *print_times_table - print the n times table starting with 0
- *@n: The limit of hte times table
- *@r: result
- */
 
 void two_digit(int r);
 void three_digit(int r);
 void one_digit(void);
+/**
+ *print_times_table - print the n times table starting with 0
+ *@n: The limit of hte times table
+ */
+
 void print_times_table(int n)
 {
 	int i;
@@ -27,7 +27,7 @@ void print_times_table(int n)
 				{
 					three_digit(res);
 				}
-				else if((res / 10) != 0)
+				else if ((res / 10) != 0)
 				{
 					two_digit(res);
 				}
