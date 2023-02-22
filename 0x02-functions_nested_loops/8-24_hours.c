@@ -5,8 +5,7 @@
  *Return: void
  */
 
-/*@int: idk*/
-void print_h(int, int, int, int);
+void print_h(int h1, int h2, int m1, int m2);
 
 void jack_bauer(void)
 {
@@ -50,11 +49,11 @@ void jack_bauer(void)
 	}
 }
 /**
- *print_h - Print the hour format
- *@h1: First num of an hour
- *@h2: Second hour
- *@m1: First num of min
- *@m2: Second min
+ * print_h - Print the hour format
+ * @h1: First num of an hour
+ * @h2: Second hour
+ * @m1: First num of min
+ * @m2: Second min
  *
  *Return: void
  */
