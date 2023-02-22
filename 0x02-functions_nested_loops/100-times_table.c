@@ -24,14 +24,21 @@ void print_times_table(int n)
 			while (j < n + '1')
 			{
 				if ((res / 100) != 0)
+				{
 					three_digit(res);
+				}
 				else if((res / 10) != 0)
+				{
 					two_digit(res);
+				}
 				else
+				{
 					if (j != '0')
 					{
 						one_digit(res);
 					}
+				}
+				_putchar(res % 10 + '0');
 				if (j != n + '0')
 				{
 					_putchar(',');
@@ -53,7 +60,6 @@ void one_digit(int r)
 {
 	_putchar(' ');
 	_putchar(' ');
-	_putchar(r % 10 + '0');
 }
 /**
  *two_digit - print number of 2 char
@@ -63,7 +69,6 @@ void two_digit(int r)
 {
 	_putchar(' ');
 	_putchar((r / 10) + '0');
-	_putchar(r % 10 + '0');
 }
 /**
  *three_digit - print number of 3 char
@@ -73,5 +78,4 @@ void three_digit(int r)
 {
 	_putchar(r / 100 + '0');
 	_putchar((r / 10) % 10 + '0');
-	_putchar(r % 10 + '0');
 }
