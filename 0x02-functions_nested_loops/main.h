@@ -22,4 +22,16 @@ int _abs(int);
 /*print_last_digit */
 int print_last_digit(int);
 
+/*jack_bauer - print every min from 00:00 to 23:59 */
+void jack_bauer(void);
+
+/* times_table - prints times table starting with 0 */
+void times_table(void);
+
 int add(int, int);
+
+/*print_to 98 - print all numb between n and 98 */
+void print_to_98(int n);
+
+/*print_times_tables - prints n times tables */
+void print_times_table(int n);
