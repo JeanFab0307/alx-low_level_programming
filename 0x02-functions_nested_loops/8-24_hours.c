@@ -5,15 +5,6 @@
  *Return: void
  */
 
-/**
- *print_h - Print the hour format
- *@a: a
- *@b: b
- *@c: c
- *@d: d
- *
- *Return: void
- */
 void print_h(int a, int b, int c, int d);
 
 void jack_bauer(void)
@@ -57,7 +48,15 @@ void jack_bauer(void)
 		}
 	}
 }
-
+/**
+ *print_h - Print the hour format
+ *@a: a
+ *@b: b
+ *@c: c
+ *@d: d
+ *
+ *Return: void
+ */
 void print_h(int a, int b, int c, int d)
 {
 	_putchar(a);
