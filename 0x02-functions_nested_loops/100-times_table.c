@@ -16,12 +16,14 @@ void print_times_table(int n)
 		res = 0;
 		while (j < n + '1')
 		{
-			if ((res / 10) != 0)
+			if ((res / 100) != 0)
 			{
-				if ((res / 100) != 0)
-					_putchar(res / 100 + '0');
-				else
-					_putchar(' ');
+				_putchar(res / 100 + '0');
+				_putchar(res / 10 + '0');
+			}
+			else if((res / 10) != 0)
+			{
+				_putchar(' ');
 				_putchar(res / 10 + '0');
 			}
 			else
@@ -30,7 +32,7 @@ void print_times_table(int n)
 					_putchar(' ');
 			}
 			_putchar(res % 10 + '0');
-			if (j != 'n')
+			if (j != n + '0')
 			{
 			_putchar(',');
 			_putchar(' ');
