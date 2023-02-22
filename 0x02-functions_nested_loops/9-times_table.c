@@ -19,7 +19,7 @@ void times_table(void)
 				_putchar(res / 10 + '0');
 			else
 				if (j != '0')
-				    _putchar(' ');
+					_putchar(' ');
 			_putchar(res % 10 + '0');
 			if (j != '9')
 			{
