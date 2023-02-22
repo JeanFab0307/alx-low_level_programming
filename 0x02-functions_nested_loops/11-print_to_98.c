@@ -5,7 +5,7 @@
  *print_to_98 - print numbers from a given number to 98
  *@n: the number given
  */
-void print_t_98(int n)
+void print_to_98(int n)
 {
 	int interval;
 

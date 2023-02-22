@@ -32,6 +32,3 @@ int add(int, int);
 
 /*print_to 98 - print all numb between n and 98 */
 void print_to_98(int n);
-
-/*print_times_tables - prints n times tables */
-void print_times_table(int n);
