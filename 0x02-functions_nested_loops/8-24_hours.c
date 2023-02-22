@@ -4,8 +4,24 @@
  *
  *Return: void
  */
-
-void print_h(int h1, int h2, int m1, int m2);
+/**
+ * print_h - Print the hour format
+ * @h1: First num of an hour
+ * @h2: Second hour
+ * @m1: First num of min
+ * @m2: Second min
+ *
+ *Return: void
+ */
+void print_h(int h1, int h2, int m1, int m2)
+{
+	_putchar(h1);
+	_putchar(h2);
+	_putchar(':');
+	_putchar(m1);
+	_putchar(m2);
+	_putchar('\n');
+}
 
 void jack_bauer(void)
 {
@@ -47,22 +63,4 @@ void jack_bauer(void)
 			a++;
 		}
 	}
-}
-/**
- * print_h - Print the hour format
- * @h1: First num of an hour
- * @h2: Second hour
- * @m1: First num of min
- * @m2: Second min
- *
- *Return: void
- */
-void print_h(int h1, int h2, int m1, int m2)
-{
-	_putchar(h1);
-	_putchar(h2);
-	_putchar(':');
-	_putchar(m1);
-	_putchar(m2);
-	_putchar('\n');
 }
