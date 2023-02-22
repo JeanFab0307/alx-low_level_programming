@@ -5,6 +5,7 @@
  *Return: void
  */
 
+/*@int: idk*/
 void print_h(int, int, int, int);
 
 void jack_bauer(void)
