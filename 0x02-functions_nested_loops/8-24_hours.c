@@ -32,7 +32,6 @@ void jack_bauer(void)
 				}
 				else
 				{
-					_putchar(d);
 					d = '0';
 					c++;
 				}
