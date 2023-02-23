@@ -3,6 +3,7 @@
 
 /**
  * main - print Fizz for 3 multiples and Buzz for 5 multiples
+ * Return: 0
  */
 int main(void)
 {
@@ -23,4 +24,5 @@ int main(void)
 		}
 		printf(" ");
 	}
+	return (0);
 }
