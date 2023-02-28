@@ -10,9 +10,7 @@
 int _strlen(char *s)
 {
 	int l;
-	const char b;
 
-	b = *s;
-	l = strlen(*b);
+	l = strlen(s);
 	return (l);
 }
