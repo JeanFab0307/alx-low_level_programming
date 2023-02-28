@@ -7,7 +7,7 @@
 void puts2(char *str)
 {
 	long unsigned int l;
-	int i;
+	long unsigned int i;
 
 	l = 0;
 	i = 0;
