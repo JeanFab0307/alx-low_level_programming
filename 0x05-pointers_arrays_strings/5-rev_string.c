@@ -6,7 +6,7 @@
  *
  *Return: nothing
  */
-void rev_print(char *s)
+void rev_string(char *s)
 {
 	int l;
 	int i;
