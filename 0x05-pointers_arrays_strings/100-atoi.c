@@ -24,12 +24,11 @@ int _atoi(char *s)
 			j++;
 		if (s[i] <= '9' && s[i] >= '0')
 		{
-			if (j % 2 == 0)
-				j = 1;
-			else
-				j = -1;
 			do {
-				res =(abs(res * 10 + (s[i] - '0'))) * j;
+				if (j % 2 == 0)
+					res = res * 10 + (s[i] - '0');
+				else
+					res = res * 10 - (s[i] - '0');
 				i++;
 			} while (s[i] <= '9' && s[i] >= '0');
 			break;
