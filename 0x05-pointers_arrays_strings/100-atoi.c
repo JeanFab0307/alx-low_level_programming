@@ -1,3 +1,4 @@
+#include <stdlib.h>
 #include <string.h>
 #include "main.h"
 /**
@@ -19,25 +20,21 @@ int _atoi(char *s)
 	len = strlen(s) - 1;
 	while (i < len)
 	{
-		if (s[i] == '+')
+		if (s[i] == '-')
 			j++;
-		else if (s[i] == '-')
-			j--;
 		if (s[i] <= '9' && s[i] >= '0')
 		{
-			do{
-				res = res * 10 + (s[i] - '0');
+			if (j % 2 == 0)
+				j = 1;
+			else
+				j = -1;
+			do {
+				res =(abs(res * 10 + (s[i] - '0'))) * j;
 				i++;
-			}while (s[i] <= '9' && s[i] >= '0');
-			len = i;
+			} while (s[i] <= '9' && s[i] >= '0');
 			break;
 		}
 		i++;
 	}
-	if (j >= 0)
-		return (res);
-	if (res < 0)
-		return (0);
-	else
-		return (-res);
+	return (res);
 }
