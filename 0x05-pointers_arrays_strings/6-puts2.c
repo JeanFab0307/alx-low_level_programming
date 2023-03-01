@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include <string.h>
 #include "main.h"
 /**
@@ -6,8 +7,8 @@
  */
 void puts2(char *str)
 {
-	long unsigned int l;
-	long unsigned int i;
+	unsigned long int l;
+	unsigned long int i;
 
 	l = 0;
 	i = 0;
@@ -17,7 +18,6 @@ void puts2(char *str)
 			str[i++] = str[l];
 		l++;
 	}
-	l = strlen(str) - 1;
-	while (l > i--)
-		str[l--] = '\0';
+		str[i] = '\0';
+		puts(str);
 }
