@@ -13,7 +13,7 @@ void puts2(char *str)
 	char a;
 
 	j = 0;
-	i = 0;
+	i = 1;
 	l = strlen(str);
 	while (j <= l)
 	{
@@ -21,12 +21,13 @@ void puts2(char *str)
 		{
 			if (j != 0)
 			{
-				a = str[j++];
+				a = str[j];
 				str[i++] = a;
 			}
 			_putchar(98);
 		}
 		a++;
+		j++;
 	}
 		puts(str);
 }
