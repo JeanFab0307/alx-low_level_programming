@@ -17,7 +17,7 @@ int _atoi(char *s)
 	j = 0;
 	res = 0;
 	len = strlen(s) - 1;
-	while ( i < len)
+	while (i < len)
 	{
 		if (s[i] == '+')
 			j++;
@@ -25,11 +25,10 @@ int _atoi(char *s)
 			j--;
 		if (s[i] <= '9' && s[i] >= '0')
 		{
-			while (s[i] <= '9' && s[i] >= '0')
-			{
+			do{
 				res = res * 10 + (s[i] - '0');
 				i++;
-			}
+			}while (s[i] <= '9' && s[i] >= '0')
 			len = i;
 			break;
 		}
