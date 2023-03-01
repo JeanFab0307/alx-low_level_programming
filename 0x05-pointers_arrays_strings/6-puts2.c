@@ -21,15 +21,12 @@ void puts2(char *str)
 		{
 			if (j != 0)
 			{
-/*				a = str[j];
-				str[i] = a;
-*/
+				a = str[j++];
+				str[i++] = a;
 			}
 			_putchar(98);
 		}
 		a++;
-		j++;
-		i++;
 	}
 		puts(str);
 }
