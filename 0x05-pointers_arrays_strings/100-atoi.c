@@ -28,7 +28,7 @@ int _atoi(char *s)
 			do{
 				res = res * 10 + (s[i] - '0');
 				i++;
-			}while (s[i] <= '9' && s[i] >= '0')
+			}while (s[i] <= '9' && s[i] >= '0');
 			len = i;
 			break;
 		}
