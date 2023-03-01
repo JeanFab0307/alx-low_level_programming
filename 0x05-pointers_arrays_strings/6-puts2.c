@@ -19,10 +19,11 @@ void puts2(char *str)
 		if (j % 2 == 0)
 		{
 			if (j != 0)
-				str[i++] = str[j];
+				str[i] = str[j];
 			_putchar(str[i]);
 		}
 		j++;
+		i++;
 	}
 		puts(str);
 }
