@@ -27,6 +27,7 @@ void puts2(char *str)
 			}
 			_putchar(98);
 		}
+		a++;
 		j++;
 		i++;
 	}
