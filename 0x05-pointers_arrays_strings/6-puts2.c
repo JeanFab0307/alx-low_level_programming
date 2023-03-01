@@ -21,8 +21,9 @@ void puts2(char *str)
 		{
 			if (j != 0)
 			{
-				a = str[j];
+/*				a = str[j];
 				str[i] = a;
+*/
 			}
 			_putchar(98);
 		}
