@@ -10,6 +10,7 @@ void puts2(char *str)
 	int l;
 	int i;
 	int j;
+	char a;
 
 	j = 0;
 	i = 0;
@@ -19,7 +20,10 @@ void puts2(char *str)
 		if (j % 2 == 0)
 		{
 			if (j != 0)
-				str[i] = str[j];
+			{
+				a = str[j];
+				str[i] = a;
+			}
 			_putchar(str[i]);
 		}
 		j++;
