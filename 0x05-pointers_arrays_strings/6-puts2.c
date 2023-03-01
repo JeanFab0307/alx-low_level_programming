@@ -18,16 +18,7 @@ void puts2(char *str)
 	while (j <= l)
 	{
 		if (j % 2 == 0)
-		{
-			if (j != 0)
-			{
-				a = str[j];
-				str[i++] = a;
-			}
-			_putchar(98);
-		}
-		a++;
+			_putchar(str[j++]);
 		j++;
 	}
-		puts(str);
 }
