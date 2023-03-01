@@ -20,6 +20,7 @@ void puts2(char *str)
 		{
 			if (j != 0)
 				str[i++] = str[j];
+			puts(str[i]);
 		}
 		j++;
 	}
