@@ -14,7 +14,7 @@ void puts2(char *str)
 	j = 0;
 	i = 0;
 	l = strlen(str);
-	while (j >= l)
+	while (j <= l)
 	{
 		if (j % 2 == 0)
 		{
