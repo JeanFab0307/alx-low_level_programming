@@ -7,17 +7,21 @@
  */
 void puts2(char *str)
 {
-	unsigned long int l;
-	unsigned long int i;
+	int l;
+	int i;
+	int j,
 
-	l = 0;
+	j = 0;
 	i = 0;
-	while (l <= strlen(str) + 1)
+	l = strlen(str);
+	while (j <= l)
 	{
-		if (l % 2 == 0)
-			str[i++] = str[l];
-		l++;
-		_putchar(98);
+		if (j % 2 == 0)
+		{
+			if (j != 0)
+				str[i++] = str[j];
+		}
+		j++;
 	}
 		puts(str);
 }
