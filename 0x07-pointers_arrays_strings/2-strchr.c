@@ -16,11 +16,11 @@ char *_strchr(char *s, char c)
 	i = 0;
 	j = 0;
 	ret = '\0';
-	while (s[i])
+	while (!s[i])
 	{
 		if (s[i] == c)
 		{
-			while (s[i])
+			while (!s[i])
 			{
 				ret[j] = s[i];
 				j++;
