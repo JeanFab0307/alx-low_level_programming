@@ -28,8 +28,7 @@ char *_strchr(char *s, char c)
 		}
 		i++;
 	}
-	if (c == '\0' || ret != 0)
-		return (ret);
-	else
-		return ("NULL");
+	if (ret[0] == '\0' && c != '\0')
+		ret = "NULL";
+	return (ret);
 }
