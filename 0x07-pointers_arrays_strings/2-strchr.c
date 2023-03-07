@@ -22,7 +22,6 @@ char *_strchr(char *s, char c)
 				ret[j] = s[i];
 				i++;
 			}
-			ret[j] = '\0';
 			break;
 		}
 	}
