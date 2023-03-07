@@ -24,9 +24,8 @@ char *_strchr(char *s, char c)
 				i++;
 			}
 			ret[j] = '\0';
-			i--;
+			break;
 		}
-		i++;
 	}
 	if (ret[0] == '\0' && c != '\0')
 		ret = "NULL";
