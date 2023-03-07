@@ -12,7 +12,7 @@ char *_strchr(char *s, char c)
 	int j;
 	char *ret;
 
-	ret = 0;
+	ret[0] = '\0';
 	for (i = 0; !s[i]; i++)
 	{
 		if (s[i] == c)
@@ -26,6 +26,5 @@ char *_strchr(char *s, char c)
 			break;
 		}
 	}
-	ret = "IDK";
 		return (ret);
 }
