@@ -24,11 +24,11 @@ char *_strchr(char *s, char c)
 				i++;
 			}
 			ret[j] = '\0';
-			i--;
 			break;
 		}
 	}
-	if (ret[0] == '\0' && c != '\0')
-		ret = "NULL";
-	return (ret);
+	if(!ret)
+		return ("NULL");
+	else
+		return (ret);
 }
