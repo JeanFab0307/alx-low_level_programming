@@ -23,7 +23,8 @@ char *_strchr(char *s, char c)
 				ret[j] = s[i];
 				i++;
 			}
-			ret[j + 1] = '\0';
+			ret[j] = '\0';
+			i--;
 			break;
 		}
 		i++;
