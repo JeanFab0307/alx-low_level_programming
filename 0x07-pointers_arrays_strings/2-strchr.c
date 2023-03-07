@@ -28,8 +28,5 @@ char *_strchr(char *s, char c)
 		}
 		i++;
 	}
-	if (ret)
-		return ("NULL");
-	else
 		return (ret);
 }
