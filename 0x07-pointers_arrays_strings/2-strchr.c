@@ -13,20 +13,17 @@ char *_strchr(char *s, char c)
 	int j;
 	char *ret;
 
-	i = 0;
-	j = 0;
 	ret = '\0';
-	while (!s[i])
+	for (i = 0; s[i] != '\0'; i++)
 	{
 		if (s[i] == c)
 		{
-			while (!s[i])
+			for (j = 0; s[i] != '\0'; j++)
 			{
 				ret[j] = s[i];
-				j++;
 				i++;
 			}
-			ret[j] = '\0';
+			ret[j + 1] = '\0';
 			break;
 		}
 		i++;
