@@ -26,5 +26,6 @@ char *_strchr(char *s, char c)
 			break;
 		}
 	}
+	ret = "IDK";
 		return (ret);
 }
