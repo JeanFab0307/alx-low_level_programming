@@ -27,8 +27,5 @@ char *_strchr(char *s, char c)
 			break;
 		}
 	}
-	if(!ret)
 		return ("NULL");
-	else
-		return (ret);
 }
