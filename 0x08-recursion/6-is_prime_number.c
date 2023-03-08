@@ -28,6 +28,6 @@ int is_prime_number(int n)
 int test_prime(int n, int i)
 {
 	if (n % i == 0)
-		return (1);
+		return (0);
 	return (1 + test_prime(n, (i + 1)));
 }
