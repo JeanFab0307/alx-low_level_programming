@@ -29,6 +29,5 @@ int test_squared(int n, int i)
 {
 	if (i * i >= n)
 		return (1);
-	test_squared(n, (i + 1));
-	return (i + 1);
+	return (1 + test_squared(n, (i + 1)));
 }
