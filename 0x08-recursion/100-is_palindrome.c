@@ -39,7 +39,7 @@ int _strlen_recursion(char *s)
  */
 int cmp(char *s, int i, int len)
 {
-	if (i > len)
+	if (i >= len)
 		return (1);
 	if (s[i] == s[len])
 		return (cmp(s, i + 1, len - 1));
