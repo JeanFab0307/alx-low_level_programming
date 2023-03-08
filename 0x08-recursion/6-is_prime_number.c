@@ -25,7 +25,7 @@ int is_prime_number(int n)
  *
  * Return: the power of two of n
  */
-int test_(int n, int i)
+int test_prime(int n, int i)
 {
 	if (n % i == 0)
 		return (1);
