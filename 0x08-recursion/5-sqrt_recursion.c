@@ -13,10 +13,10 @@ int _sqrt_recursion(int n)
 	if (n < 0)
 		return (-1);
 	j = test_squared(n, 1);
-	if (j * j > n)
-		return (-1);
-	else if (j * j == n)
+	if (j * j == n)
 		return (j);
+	else
+		return (-1);
 }
 /**
  * test_squared - try the power of 2 of numbers until a goal
@@ -28,6 +28,7 @@ int _sqrt_recursion(int n)
 int test_squared(int n, int i)
 {
 	if (i * i >= n)
-		return (i);
-	test_squared(n, i + 1);
+		return (1);
+	test_squared(n, (i + 1));
+	return (i + 1);
 }
