@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- *_ pow_recursion - print the value of x^y
+ * _pow_recursion - print the value of x^y
  * @x: the int raised tp the power
  * @y: the power
  * Return: x raised tp the powwer of y or -1 if x is negative
