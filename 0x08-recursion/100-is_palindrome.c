@@ -41,7 +41,7 @@ int cmp(char *s, int i, int len)
 {
 	if (i >= len)
 		return (1);
-	else if (s[i] == s[len])
+	else if (s[i] == s[len - 1])
 		return (1);
 	else
 		return (0);
