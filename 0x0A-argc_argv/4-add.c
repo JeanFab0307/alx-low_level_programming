@@ -20,10 +20,10 @@ int main(int argc, char *argv[])
 		printf("0\n");
 		return (0);
 	}
-	for (i = 0; i < argc; i++)
+	for (i = 1; i < argc; i++)
 	{
 		j = 0;
-		while (*argv[j] != '\0')
+		while (*(argv + i)[j] != '\0')
 		{
 			if (isdigit(argv[j]) == 0)
 			{
