@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdlib.h>
 /**
  * main - print the name of the program
  * @argc: the number of arg
@@ -13,8 +14,8 @@ int main(int argc, char *argv[])
 
 	if (argc == 3)
 	{
-		a = argv[1] - '0';
-		b = argv[2] - '0';
+		a = atoi(argv[1]);
+		b = atoi(argv[2]);
 		printf("%d\n", a * b);
 		return (0);
 	}
