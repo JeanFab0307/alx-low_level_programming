@@ -36,6 +36,6 @@ int main(int argc, char *argv[])
 		else if (i == 1)
 			i = i - 1;
 	}
-	printf("%d\n", j - 1);
+	printf("%d\n", j);
 	return (0);
 }
