@@ -13,7 +13,7 @@ char *_strdup(char *str)
 	unsigned int len;
 
 	len = 0;
-	for (i = 0; !(str[i]); i++)
+	for (i = 0; (str[i]); i++)
 		len++;
 	buffer = malloc(len + 1);
 	if (buffer == NULL || str == NULL)
