@@ -13,5 +13,4 @@ struct my_dog
 	float age;
 	char *owner;
 };
-
 #endif
