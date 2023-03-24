@@ -3,7 +3,7 @@
 #include <stdlib.h>
 #include "variadic_functions.h"
 /**
- * print numbers - prints numers, followed by a new line
+ * print_numbers - prints numers, followed by a new line
  * @separator: a string to separate each number
  * @n: the number of int printed
  *
@@ -16,13 +16,16 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 
 	if (n <= 0)
 	{
+		printf("%s", separator);
 	}
 	else
 	{
 		va_start(ap, n);
 		for (i = 0; i < n; i++)
 		{
-			if (separator == NULL || i == 0)
+			if (separator == NULL)
+				break;
+			if (i == 0)
 				i = 0;
 			else
 				printf("%s", separator);
