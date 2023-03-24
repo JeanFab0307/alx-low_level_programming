@@ -22,10 +22,8 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 		va_start(ap, n);
 		for (i = 0; i < n; i++)
 		{
-			if (separator == NULL)
-				break;
-			if (i == 0)
-				i = 0;
+			if (separator == NULL || i == 0)
+				printf("");
 			else
 				printf("%s", separator);
 			printf("%d", va_arg(ap, int));
