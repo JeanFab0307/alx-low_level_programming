@@ -39,7 +39,7 @@ int main(void)
 		}
 		else
 		{
-			b = '0', a++;
+			b = '0', a++, c = a;
 		}
 	}
 	putchar('\n');
