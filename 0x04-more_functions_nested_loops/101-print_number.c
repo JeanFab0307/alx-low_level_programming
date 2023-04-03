@@ -21,7 +21,7 @@ void print_number(int n)
 		{
 			if (i == 0)
 				_putchar(n + '0');
-			while(i > 0)
+			while (i > 0)
 			{
 				res = (n / _10_power(--i)) % 10;
 				if (n < 0)
