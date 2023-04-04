@@ -12,7 +12,7 @@ char *argstostr(int ac, char **av)
 {
 	int i = 0;
 	int j = 0;
-	int size;
+	int size = 0;
 	char *buffer;
 
 	if (ac == 0 || av == NULL)
@@ -22,7 +22,7 @@ char *argstostr(int ac, char **av)
 		j = 0;
 		while (av[i][j] != '\0')
 			j++;
-		size = size + j + 1;
+		size = size + j;
 	}
 	buffer = malloc(sizeof(char) * size);
 	if (buffer == NULL)
