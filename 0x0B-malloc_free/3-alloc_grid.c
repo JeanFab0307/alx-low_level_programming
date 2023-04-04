@@ -10,25 +10,31 @@
 int **alloc_grid(int width, int height)
 {
 	int **buffer;
-	int i;
-	int j;
+	int i = 0;
+	int j = 0;
 
 	if (width <= 0 || height <= 0)
 		return (NULL);
-	buffer = malloc(sizeof(int) * height * width);
-	*buffer = malloc(sizeof(int) * width);
+	buffer = malloc(sizeof(*buffer) * height);
 	if (buffer == NULL)
+	{
+		free(buffer);
 		return (NULL);
-	i = 0;
+	}
 	while (i < height)
 	{
-		j = 0;
-		while (j < width)
+		buffer[i] = malloc(sizeof(buffer) * width);
+		if (buffer[i] == NULL)
 		{
-			buffer[i][j] = 0;
-			j++;
+			free (buffer[i]);
+			return (NULL);
 		}
 		i++;
+	}
+	for (i = 0; i < height; i++)
+	{
+		for (j = 0; j < width; j++)
+			buffer[i][j] = 0;
 	}
 	return (buffer);
 }
