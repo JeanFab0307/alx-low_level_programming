@@ -23,6 +23,8 @@ char **strtow(char *str)
 		    (str[i] != ' ' && str[i - 1] == ' '))
 			size++;
 	}
+	if (size == 0)
+		return (NULL);
 	buffer = malloc(sizeof(*buffer) * size + 1);
 	if (buffer == NULL)
 		return (NULL);
@@ -32,7 +34,7 @@ char **strtow(char *str)
 	{
 		if (str[i] != ' ')
 			size++;
-		if (str[i] != ' ' && str[i + 1] == ' ')
+		if (str[i] != ' ' && (str[i + 1] == ' ' || str[i + 1] == '\0'))
 		{
 			buffer[n] = malloc(sizeof(char) * size + 1);
 			if (buffer[n] == NULL)
