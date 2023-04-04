@@ -25,10 +25,10 @@ char **strtow(char *str)
 	}
 	if (size == 0)
 		return (NULL);
-	buffer = malloc(sizeof(*buffer) * size + 1);
+	buffer = malloc(sizeof(*buffer) * ++size);
 	if (buffer == NULL)
 		return (NULL);
-	buffer[size] = '\0';
+	buffer[--size] = '\0';
 	size = 0;
 	for (i = 0; str[i] != '\0'; i++)
 	{
