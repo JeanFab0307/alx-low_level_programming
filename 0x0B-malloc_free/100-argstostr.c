@@ -21,10 +21,12 @@ char *argstostr(int ac, char **av)
 	{
 		j = 0;
 		while (av[i][j] != '\0')
+		{
 			j++;
-		size = size + j;
+			size++;
+		}
 	}
-	buffer = malloc(sizeof(char) * size);
+	buffer = malloc(sizeof(char) * size + 1);
 	if (buffer == NULL)
 		return (NULL);
 	size = 0;
