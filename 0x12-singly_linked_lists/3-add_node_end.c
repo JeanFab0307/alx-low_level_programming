@@ -16,14 +16,12 @@ list_t *add_node_end(list_t **head, const char *str)
 	unsigned int lenght = strlen(str);
 
 	h = malloc(sizeof(list_t));
-	temp = malloc(sizeof(list_t));
-	if (h == NULL || temp == NULL)
+	if (h == NULL)
 		return (NULL);
 	buffer = malloc(sizeof(char) * lenght);
 	if (buffer == NULL)
 	{
 		free(h);
-		free(temp);
 		return (NULL);
 	}
 	buffer = strdup(str);
