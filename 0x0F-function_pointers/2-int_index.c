@@ -8,7 +8,7 @@
  * @cmp :a ptr to a function to compare value
  *
  * Return: the index of the element compared in the array
-or -1 if no match. or -1 if size <=0
+ * or -1 if no match or if size <=0
 */
 
 int int_index(int *array, int size, int (*cmp)(int))
