@@ -8,7 +8,7 @@
  *
  * Return: Nothing
  */
-void print_name(char *name, void (*f)(cahr *))
+void print_name(char *name, void (*f)(char *))
 {
 	if (f != NULL)
 		f(name);
