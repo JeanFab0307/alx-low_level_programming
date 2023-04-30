@@ -1,5 +1,6 @@
 #ifndef LISTS_H
-#define LIST_H
+
+#define LISTS_H
 
 /**
  * struct listint_s - singly linked list
@@ -7,7 +8,7 @@
  * @next: points to the next node
  *
  * Description: singly linked list node structure
- * 
+ *
  */
 typedef struct listint_s
 {
